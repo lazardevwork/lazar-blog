@@ -12,6 +12,11 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2300992621659894"
+          crossOrigin="anonymous"
+        ></script>
       </Html>
     );
   }
