@@ -1,7 +1,5 @@
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
-import Script from 'next/script';
-import { GoogleAdsenseContainer } from '../components/GoogleAdsenseContainer';
 
 class MyDocument extends Document {
   render() {
@@ -13,9 +11,8 @@ class MyDocument extends Document {
         >
           <Main />
           <NextScript />
-          <GoogleAdsenseContainer />
 
-          <Script
+          <script
             id="Adsense-id"
             async
             crossOrigin="anonymous"
