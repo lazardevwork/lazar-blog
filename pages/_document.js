@@ -1,5 +1,7 @@
 import React from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script';
+import { GoogleAdsenseContainer } from '../components/GoogleAdsenseContainer';
 
 class MyDocument extends Document {
   render() {
@@ -11,27 +13,19 @@ class MyDocument extends Document {
         >
           <Main />
           <NextScript />
+          <GoogleAdsenseContainer />
 
-          <script
+          <Script
+            id="Adsense-id"
             async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2300992621659894"
             crossOrigin="anonymous"
-          ></script>
-          <ins
-            className="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-2300992621659894"
-            data-ad-slot="3122840172"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          ></ins>
-          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            onError={(e) => {
+              console.error('Script failed to load', e);
+            }}
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2300992621659894"
+            strategy="afterInteractive"
+          />
         </body>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2300992621659894"
-          crossOrigin="anonymous"
-        ></script>
       </Html>
     );
   }

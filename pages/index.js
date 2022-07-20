@@ -7,6 +7,7 @@ import Layout, { GradientBackground } from '../components/Layout';
 import ArrowIcon from '../components/ArrowIcon';
 import { getGlobalData } from '../utils/global-data';
 import SEO from '../components/SEO';
+import { GoogleAdsenseContainer } from '../components/GoogleAdsenseContainer';
 
 export default function Index({ posts, globalData }) {
   return (
@@ -45,6 +46,10 @@ export default function Index({ posts, globalData }) {
             </li>
           ))}
         </ul>
+        <GoogleAdsenseContainer
+          client="ca-pub-2300992621659894"
+          slot="3122840172"
+        />
       </main>
       <Footer copyrightText={globalData.footerText} />
       <GradientBackground
