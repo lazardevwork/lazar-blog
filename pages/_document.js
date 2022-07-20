@@ -15,10 +15,10 @@ class MyDocument extends Document {
           <script
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2300992621659894"
-            crossorigin="anonymous"
+            crossOrigin="anonymous"
           ></script>
           <ins
-            class="adsbygoogle"
+            className="adsbygoogle"
             style="display:block"
             data-ad-client="ca-pub-2300992621659894"
             data-ad-slot="3122840172"
